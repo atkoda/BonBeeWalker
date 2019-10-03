@@ -1,5 +1,5 @@
 # チーム名
-MK3
+MK3(マークスリー)
 
 
 # BonBeeWalker
