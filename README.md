@@ -27,5 +27,15 @@ MK3(マークスリー)
 
 ## コアタイム
 
-木曜日 8:00 〜 10:30<br>
-金曜日 16:30 〜 22:30<br>
+木曜日 08:00 〜 10:30<br>
+金曜日 16:30 〜 20:00<br>
+
+## 開発環境
+
+[Python 3](https://www.python.org/)<br>
+[Flask](https://a2c.bitbucket.io/flask/)<br>
+
+## プロダクトバックログ
+
+[Trello](https://trello.com/b/G2q3xd6O/bonbee-walker)<br>
+
