@@ -18,6 +18,10 @@ MK3(マークスリー)
 食べログやトリップアドバイザーと異なり、グルメやレジャーなどジャンルを絞らず<br>
 予算内で出来ることができることが強みです。<br>
 
+## プロダクトバックログ
+
+[Trello](https://trello.com/b/G2q3xd6O/bonbee-walker)<br>
+
 ## ワーキングアグリーメント
 
 朝練に遅刻したら朝「マック」を全員におごり<br>
@@ -38,8 +42,4 @@ MK3(マークスリー)
 
 [Python 3](https://www.python.org/)<br>
 [Flask](https://a2c.bitbucket.io/flask/)<br>
-
-## プロダクトバックログ
-
-[Trello](https://trello.com/b/G2q3xd6O/bonbee-walker)<br>
 
