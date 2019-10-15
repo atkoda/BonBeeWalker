@@ -5,15 +5,10 @@
   text-align: center;
 }
 
-.parent{
-  display: flex;
-  justify-content: center;
-}
-.zeroyen_list {
+#zeroyen_list {
   font-size: 20px;
-  /*
   margin: 10px auto;
-  text-align: center;*/
+  text-align: center;
 }
 li{
   list-style-type: none;
