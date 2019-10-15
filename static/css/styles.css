@@ -1,0 +1,30 @@
+#title {
+  font-size: 25px;
+  font-family: Corporate Logo Rounded;
+  color : red;
+  text-align: center;
+}
+
+#introduction{
+font-size: 20px;
+font-style: italic;
+color: green;
+text-align: center;
+}
+
+#main_table
+
+thead{
+  background-color:#000;
+  color:#fff;
+}
+
+tbody{
+  text-align:center;
+}
+
+/*.parent {
+   display: -webkit-flex;
+   display: flex;
+   flex-wrap: wrap;
+}*/
