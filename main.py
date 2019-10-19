@@ -1,15 +1,18 @@
 #using: utf-8
 from flask import Flask, render_template
 import psycopg2
+import os
 app = Flask(__name__)
 
-connection = psycopg2.connect(host = "localhost", database = "bonbee_db", user = "ryoya", password = "zzzxxx0822")
+def get_connection():
+    dsn = os.environ.get('DATABASE_URL')
+    return psycopg2.connect(dsn)
 
-cur = connection.cursor()
-cur.execute('SELECT * FROM gundam')
+cur = get_connection().cursor()
+cur.execute('SELECT * FROM gundam ORDER BY id ASC')
 data = cur.fetchall()
 cur.close()
-connection.close()
+get_connection().close()
 
 @app.route('/')
 def hello_world():
