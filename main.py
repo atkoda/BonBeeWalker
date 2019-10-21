@@ -9,7 +9,7 @@ def get_connection():
     return psycopg2.connect(dsn)
 
 cur = get_connection().cursor()
-cur.execute('SELECT * FROM gundam ORDER BY id ASC')
+cur.execute('SELECT * FROM zgundam ORDER BY id ASC')
 data = cur.fetchall()
 cur.close()
 get_connection().close()
