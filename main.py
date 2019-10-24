@@ -14,7 +14,7 @@ data = cur.fetchall()
 cur.close()
 get_connection().close()
 
-@app.route('/')
+@app.route('/', methods=["POST"])
 def hello_world():
     return render_template('index.html', len = len(data), data = data)
 
