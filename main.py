@@ -18,6 +18,17 @@ get_connection().close()
 def index():
     return render_template('index.html', len = len(data), data = data)
 
+@app.route('/search')
+def search():
+    return render_template('commons/search.html')
+
+@app.route('/post', methods=['GET', 'POST'])
+def post():    
+    if request.method == 'POST':
+       budget = request.form['budget']
+       if budget != None:
+         return redirect(url_for('index'))
+       return redirect(url_for('search'))
 
 if __name__ == "__main__":
     app.run()
