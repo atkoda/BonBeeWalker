@@ -8,11 +8,11 @@ def get_connection():
     dsn = os.environ.get('DATABASE_URL')
     return psycopg2.connect(dsn)
 
-@app.route('/')
+@app.route('/search')
 def index():
     return render_template('index.html', len = 0, data = [])
 
-@app.route('/search')
+@app.route('/')
 def search():
     return render_template('commons/search.html')
 
@@ -26,7 +26,7 @@ def post():
          IsValue = True
          return render_template('commons/search.html', IsValue = IsValue)
        cur = get_connection().cursor()
-       cur.execute('SELECT * FROM zgundam WHERE money <= %s ORDER BY money ASC', (budget,))
+       cur.execute('SELECT type,money,place,cando FROM zgundam WHERE money <= %s ORDER BY money ASC', (budget,))
        data = cur.fetchall()
        cur.close()
        get_connection().close()
