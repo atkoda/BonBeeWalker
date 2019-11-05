@@ -14,7 +14,7 @@ def index():
 
 @app.route('/')
 def search():
-    return render_template('commons/search.html')
+    return render_template('commons/search2.html')
 
 @app.route('/post', methods=['GET', 'POST'])
 def post():
